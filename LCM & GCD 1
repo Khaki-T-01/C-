@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int t;
+	cin >> t;
+	while(t--){
+		int y,b;
+		long long x,a;
+		cin >> a >> b;
+		x = a;
+		y = b;
+		long long BCNN;
+		int UCLN;
+		while(a!=b){
+			if(a>b)
+				a -= b;
+			else b -= a;
+		}
+		BCNN = (x*y)/a;
+		UCLN = a;
+		cout << BCNN <<" " << UCLN<< endl;
+	}
+}
